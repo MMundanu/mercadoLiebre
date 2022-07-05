@@ -1,0 +1,95 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+body{
+    max-width: 768px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--amarillo);
+    padding-bottom: 20px;
+}
+.header__logo{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.header__buscador{
+    margin-left: 20px;
+}
+.header__buscador input{
+    width: 55%;
+}
+.header__boton{
+    margin-left: 20px;
+}
+.header p{
+    text-align: center;
+}
+.header ul, ol{
+    padding-left: 0;   
+}
+.burger-menu{
+    background-color: var(--celeste);
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.burger-menu i{
+
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.main__ultVisitas h2, .main__ofertas h2{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.descripcion{
+    font-size: 16px;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+}
+main{
+    margin-bottom: 30px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}
+.footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+.footer section{
+    margin-top: 25px;
+}
