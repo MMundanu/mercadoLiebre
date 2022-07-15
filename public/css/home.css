@@ -59,8 +59,8 @@ body{
 
 /*MAIN*/
 .main__ultVisitas article, .main__ofertas article{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     margin-top: 10px;
     background-color: white;
     padding: 20px 0;
@@ -160,8 +160,10 @@ main section article .detalle{
     .main__ultVisitas, .main__ofertas{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap: 10px 45px;
+        width: 90%;
+        margin: auto;
     }
     .main__ultVisitas h2, .main__ofertas h2{
         margin-top: 10px;
@@ -185,7 +187,7 @@ main section article .detalle{
         margin: auto;
     }
     .main__ultVisitas article, .main__ofertas article{
-        width: 220px;
+        width: 195px;
     }
     
 }

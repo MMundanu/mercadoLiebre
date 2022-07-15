@@ -15,8 +15,8 @@
 .main__ultVisitas h2, .main__ofertas h2{
     font-size: 24px;
     color: var(--grisOscuro);
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    
 }
 
 ul, ol{
