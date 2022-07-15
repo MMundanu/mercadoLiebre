@@ -6,61 +6,111 @@ body{
     box-sizing: border-box;
     background-color: var(--grisClaro);
 }
-header{
+/*HEADER*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
     background-color: var(--amarillo);
-    padding-bottom: 20px;
+    justify-content: space-between;
+    align-content: center;
+    
 }
 .header__logo{
-    width: 40%;
-    margin-left: 20px;
+    width: 50%;
+    padding: 5px;
 }
-
 .header__buscador{
-    margin-left: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 .header__buscador input{
-    width: 45%;
+    width: 85%;
+    padding: 8px 4px;
+    border-radius: 5px;
+    border: none;
 }
-.header__boton{
-    margin-left: 20px;
-}
-.header p{
-    text-align: center;
-}
-.header ul, ol{
-    padding-left: 0;   
+.header__buscador button{
+    padding: 8px;
+    border: none;
 }
 .header__menu, .header__login{
     display: none;
 }
-.burger-menu{
-    background-color: var(--celeste);
-    color: white;
-    padding: 5px;
-    margin-top: 5px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 50%;
-    transform: translateX(-50%);
 
+.header__conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
 }
-.burger-menu i{
-
+.burger-menu{
+    color: #FFF;
     font-size: 20px;
     text-align: center;
+    background-color: var(--celeste);
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin-top: 15px;
 }
-article{
+
+/*MAIN*/
+.main__ultVisitas article, .main__ofertas article{
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
     background-color: white;
-}
-article ul, ol{
-    padding-bottom: 10px;
+    padding: 20px 0;
 }
 
 
-/* footer */
+main section article .detalle{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    border-top: solid 1px var(--grisClaro);
+}
+.camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: var(--verde);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descuento{
+    font-size: 16px;
+    color: var(--verde);
+    width: 70%;
+}
+.descripcion{
+    font-size: 16px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/*FOOTER*/
 .footer{
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 .footer i{
     font-size: 2em;
@@ -70,22 +120,58 @@ article ul, ol{
 .footer section{
     margin-top: 25px;
 }
+.footer .copy{
+    text-align: left;
+}
 
-
-/* tablrt*/
-
-@media (min-width: 768px){
-    .header__menu, .header__login{
-        display: block;
+@media (min-width: 768px) {
+    /*HEADER*/
+    .header{
+        padding-bottom: 10px;
+    }
+    .header__logo{
+        width: 30%;
+    }
+    .header__buscador{
+        width: 30%
+    }
+    .header__conteiner{
+        width: 40%;
     }
     .burger-menu{
         display: none;
     }
-    article{
-        box-shadow: 0px 0px 30px rgb(100, 100, 100);
+    .header__menu, .header__login{
+        display: flex;
+        width: 35%;
+        
     }
-    .descripcion{
-        display: block;
+    .header__menu ul, .header__login ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
+    /*MAIN*/
+
+    .main__ultVisitas, .main__ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px 45px;
+    }
+    .main__ultVisitas h2, .main__ofertas h2{
+        margin-top: 10px;
+    }
+    .main__ultVisitas article, .main__ofertas article{
+        width: 300px;
+        box-shadow: 0px 0px 30px rgb(100, 100, 100);
+    }
+    .precio{
+        width: 50%;
+    }
+    .descuento{
+        width: 50%;
+    }
+    
 }

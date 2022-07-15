@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
 :root {
     --amarillo: #EAC926;
     --azul: #03264C;
@@ -10,27 +15,10 @@
 .main__ultVisitas h2, .main__ofertas h2{
     font-size: 24px;
     color: var(--grisOscuro);
+    width: 90%;
+    margin: auto;
 }
-.camion{
-    display: inline;
-    border-radius: 50%;
-    padding: 10px;
-    border: solid 1px var(--verde);
-    color: var(--verde);
-    font-size: 20px;
-    margin-left: 40px;
-}
-.precio{
-    font-size: 18px;
-}
-.descuento{
-    font-size: 16px;
-    color: var(--verde);
-}
-.descripcion{
-    font-size: 16px;
-    display: none;
-}
+
 ul, ol{
     list-style: none;
 }
@@ -42,7 +30,6 @@ img{
     width: 100%;
 }
 main{
-    width: 90%;
-    margin: auto;
+    width: 100%;
     margin-bottom: 30px;
 }
