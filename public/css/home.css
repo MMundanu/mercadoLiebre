@@ -169,7 +169,7 @@ main section article .detalle{
         margin-top: 10px;
     }
     .main__ultVisitas article, .main__ofertas article{
-        width: 300px;
+        width: 45%;
         box-shadow: 0px 0px 30px rgb(100, 100, 100);
     }
     .precio{
