@@ -137,6 +137,9 @@ main section article .detalle{
     }
     .header__conteiner{
         width: 40%;
+        margin: 0;
+        justify-content: center;
+
     }
     .burger-menu{
         display: none;
