@@ -64,6 +64,7 @@ body{
     margin-top: 10px;
     background-color: white;
     padding: 20px 0;
+    
 }
 
 
@@ -89,6 +90,10 @@ main section article .detalle{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 0.30s;
+}
+.camion:hover{
+    transform: rotate(360deg);
 }
 .precio{
     font-size: 18px;
@@ -154,6 +159,12 @@ main section article .detalle{
         width: 100%;
         justify-content: space-between;
     }
+    .header__login .ingresar{
+        transition: all;
+    }
+    .header__login .ingresar:hover{
+        color: #0022AA;
+    }
 
     /*MAIN*/
 
@@ -186,8 +197,46 @@ main section article .detalle{
         max-width: 1024px;
         margin: auto;
     }
+
+    
     .main__ultVisitas article, .main__ofertas article{
+        height: 305px;
         width: 195px;
+        box-shadow: none;
+        transition: all 300ms;
+    }
+    .main__ultVisitas article:hover, .main__ofertas article:hover{
+        transform: scale(1.02);
+        box-shadow:0px 0px 30px rgb(100, 100, 100);;
+    }
+    .descripcion{
+        display: none;
+        transition: all 300ms;
+    }
+    .main__ultVisitas article:hover .descripcion, .main__ofertas article:hover .descripcion{
+        
+        display: block;
+    }
+    /*FOOTER*/
+    .footer .conteiner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    .footer__pagos, .footer__envios, .footer__seguridad{
+        width: 30%;
     }
     
+    .footer i {
+        transition: all;
+    }
+    .footer i:hover{
+        color: var(--amarillo);
+    }
+
+
 }
